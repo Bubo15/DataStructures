@@ -1,0 +1,13 @@
+package TreesRepresentationAndTraversal_BFS_DFS.lab.interfaces;
+
+import TreesRepresentationAndTraversal_BFS_DFS.lab.implementations.Tree;
+
+import java.util.List;
+
+public interface AbstractTree<E> {
+    List<E> orderBfs();
+    List<E> orderDfs();
+    void addChild(E parentKey, Tree<E> child);
+	void removeNode(E nodeKey);
+    void swap(E firstKey, E secondKey);
+}
